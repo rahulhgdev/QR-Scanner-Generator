@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QR Scanner &amp; Generator</string>
+    <string name="qr_intro">qr intro</string>
+
+    <!---Intro Description -->
+
+    <string name="intro_desc">Hey! Welcome to QR Scanner and Generator</string>
+    <string name="type_here">input</string>
+    <string name="display_qrhere">display_qrhere</string>
+    <string name="btn_generate">Generate</string>
+</resources>

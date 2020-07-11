@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_two"
+    tools:context=".QR_activity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="372dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:hint="Type Here"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <ImageView
+        android:id="@+id/display_qr"
+        android:layout_width="247dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="56dp"
+        android:background="#973DD6"
+        android:contentDescription="@string/display_qrhere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="372dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/background"
+        android:text="@string/btn_generate"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_qr" />
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="372dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="80dp"
+        android:text="Scan"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
