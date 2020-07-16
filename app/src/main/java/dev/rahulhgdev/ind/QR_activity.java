@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
@@ -48,7 +49,7 @@ public class QR_activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String finalInput = input.getText().toString();
-                if(finalInput != null){
+                if(finalInput.length() > 0 && finalInput !=null){
 
                     try {
                         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
@@ -59,6 +60,8 @@ public class QR_activity extends AppCompatActivity {
                     }catch(WriterException e){
                         e.printStackTrace();
                     }
+                }else {
+                    Toast.makeText(getApplicationContext(),"Please Enter Some Value",Toast.LENGTH_SHORT).show();
                 }
             }
         });
